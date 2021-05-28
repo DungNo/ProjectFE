@@ -157,7 +157,7 @@ li {
           display: inline-block;
           select {
             font-size: 12px;
-            line-height: 42px;
+            line-height: 40px;
             color: #8f8f8f;
             font-weight: 500;
             font-family: "Poppins", sans-serif;
@@ -165,6 +165,10 @@ li {
             background-color: #ffffff;
             padding-left: 16px;
             padding-right: 10px;
+            cursor: pointer;
+            &:focus {
+              outline: none;
+            }
             option {
               border: none;
               font-size: 12px;
@@ -172,10 +176,12 @@ li {
               color: #8f8f8f;
               font-weight: 500;
               font-family: "Poppins", sans-serif;
+              outline: none;
             }
           }
         }
         input {
+          width: 56%;
           padding-left: 20px;
           border-left: 1px solid #e0e0e0;
           border-bottom: none;
@@ -187,10 +193,13 @@ li {
           font-weight: 500;
           font-family: "Poppins", sans-serif;
           margin-left: 26px;
+          &:focus {
+            outline: none;
+          }
         }
         button {
           width: 58px;
-          height: 40px;
+          height: 41px;
           display: inline-block;
           background-color: #0ca8c9;
           text-align: center;
@@ -298,6 +307,10 @@ li {
         text-transform: uppercase;
         margin-bottom: 0;
         letter-spacing: 0.2px;
+        cursor: pointer;
+        &:hover {
+          color: chocolate;
+        }
       }
     }
     &__menu {
@@ -306,7 +319,7 @@ li {
       float: right;
       z-index: 100;
       .dropbtn {
-        background: url("../images/header/Overflow.png") no-repeat center right;
+        background: url("../images/header/Overflow.png") no-repeat center left;
         line-height: 50px;
         color: #ffffff;
         width: 50px;
@@ -315,6 +328,17 @@ li {
         transform: rotate(180deg);
         background-color: #0ca8c9;
         border: none;
+        cursor: pointer;
+        &:hover {
+          color: chocolate;
+        }
+      }
+      #category {
+        a {
+          &:hover {
+            color: #0ca8c9;
+          }
+        }
       }
       &__nav {
         display: inline-block;
@@ -330,8 +354,10 @@ li {
             color: #ffffff;
             font-weight: 600;
             font-family: "Poppins", sans-serif;
-            text-align: right;
             text-transform: uppercase;
+            &:hover {
+              color: chocolate;
+            }
           }
         }
       }
@@ -349,7 +375,7 @@ li {
     width: 100%;
     .mySlides {
       display: none;
-      width: 100%;
+      width: 100%;      
     }
   }
   &--title {
@@ -424,6 +450,7 @@ li {
     background: url(../images/slider/next.png) no-repeat center;
     color: #fff;
     padding-left: 10px;
+    cursor: pointer;
   }
   .prev {
     position: absolute;
@@ -435,6 +462,7 @@ li {
     padding-right: 5px;
     transform: translate(-10%, -50%);
     background: url(../images/slider/prev.png) no-repeat center;
+    cursor: pointer;
   }
 }
 // Fact
@@ -450,6 +478,11 @@ li {
     padding: 0 15px;
     display: flex;
     position: relative;
+    a {
+      &:hover {
+        background-color: #ebebeb;
+      }
+    }
     .fact__logo {
       display: inline-block;
       padding-left: 60px;
@@ -502,6 +535,9 @@ li {
     display: inline-block;
     padding: 0 15px;
     position: relative;
+    a {
+      display: block;
+    }
     &--img {
       display: flex;
       width: 100%;
@@ -525,7 +561,7 @@ li {
         .time {
           width: 60px;
           height: 62px;
-          background-color: aqua;
+          background-color: #fff;
           margin: 0 5px;
           h4 {
             font-size: 21px;
@@ -688,6 +724,8 @@ li {
   }
   &-main {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     li {
       width: 100%;
       padding: 0 15px;
@@ -741,13 +779,17 @@ li {
     z-index: 11;
     right: 17px;
     height: 31px;
-    width: 17px;
+    width: 18px;
 
     &:before {
       background: url(../images/topsell/right.png) no-repeat center;
       z-index: 12;
       font-family: unset;
       color: unset;
+    }
+    &:hover {
+      background: url(../images/slider/arrowright.png) no-repeat center;
+      background-color: #0ca8c9;
     }
   }
   .slick-prev {
@@ -763,6 +805,9 @@ li {
       font-family: unset;
       color: unset;
     }
+    &:hover {
+      background-color: #0ca8c9;
+    }
   }
 }
 
@@ -772,14 +817,15 @@ li {
   background-color: #f2f2f2;
   &-main {
     max-width: 1170px;
-    padding: 0 15px;
+    // padding: 0 15px;
     box-sizing: border-box;
     margin: auto;
     display: block;
     &__title {
       display: block;
       position: relative;
-      padding-top: 41px;
+      // padding-top: 41px;
+      padding: 41px 15px 0 15px;
       &__hots {
         text-align: center;
         h2 {
@@ -845,7 +891,9 @@ li {
             color: #353333;
             font-family: "Poppins", sans-serif;
             word-spacing: 2px;
-            span {
+            a {
+              font-size: 12px;
+              line-height: 40px;
               color: #0ca8c9;
             }
           }
@@ -912,6 +960,9 @@ li {
         font-weight: 400;
         font-family: "Poppins", sans-serif;
         margin-left: 32px;
+        &:focus {
+          outline: none;
+        }
       }
       button {
         max-width: 170px;
@@ -984,7 +1035,7 @@ li {
         margin-bottom: 19px;
         .footer--title {
           padding-left: 0;
-          padding-bottom: 2px;
+          padding-bottom: 2px;          
         }
         ul {
           li {
@@ -1003,7 +1054,6 @@ li {
     }
     .footer--title {
       font-size: 16px;
-      color: #000000;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
@@ -1011,6 +1061,12 @@ li {
       letter-spacing: -0.6px;
       word-spacing: 3px;
       padding-left: 98px;
+      a {        
+        color: #000000;        
+        &:hover {
+          color: #0ca8c9;
+        }
+      }
     }
     ul {
       & > li {
@@ -1024,7 +1080,6 @@ li {
         }
         .footer--content {
           padding-left: 36px;
-
           a {
             font-size: 13px;
             line-height: 20px;
@@ -1032,6 +1087,9 @@ li {
             font-weight: 500;
             font-family: "Poppins", sans-serif;
             word-spacing: 0.6px;
+            &:hover {
+              color: #0ca8c9;
+            }
           }
         }
       }
@@ -1047,6 +1105,9 @@ li {
           color: #8f8f8f;
           font-weight: 500;
           font-family: "Poppins", sans-serif;
+          &:hover {
+            color: #0ca8c9;
+          }
         }
       }
     }
@@ -1076,7 +1137,7 @@ footer {
         font-family: "Poppins", sans-serif;
         word-spacing: -0.6px;
         letter-spacing: 0.2px;
-        span {
+        a {
           color: #0ca8c9;
         }
       }
