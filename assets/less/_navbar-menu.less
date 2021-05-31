@@ -1,0 +1,85 @@
+.menu {
+    width: 100%;
+    background-color: #0ca8c9;
+    height: 50px;
+    z-index: 10;
+    &-main {
+      max-width: 1170px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      margin: auto;
+      display: block;
+      z-index: 10;
+      &__category {
+        display: inline-block;
+        width: 165px;
+        height: 100%;
+        .categorybtn {
+          background: url(../images/header/Overflow.png) no-repeat left center;
+          line-height: 50px;
+          padding-left: 45px;
+          font-size: 14px;
+          color: #ffffff;
+          font-weight: 600;
+          font-family: "Poppins", sans-serif;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          letter-spacing: 0.2px;
+          cursor: pointer;
+          &:hover {
+            color: chocolate;
+          }
+        }
+      }
+      &__menu {
+        display: inline-block;
+        background-color: #0ca8c9;
+        float: right;
+        z-index: 100;
+        .dropbtn {
+          background: url("../images/header/Overflow.png") no-repeat center left;
+          line-height: 50px;
+          color: #ffffff;
+          width: 50px;
+          height: 50px;
+          display: none;
+          transform: rotate(180deg);
+          background-color: #0ca8c9;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            color: chocolate;
+          }
+        }
+        #category {
+          a {
+            &:hover {
+              color: #0ca8c9;
+            }
+          }
+        }
+        &__nav {
+          display: inline-block;
+          line-height: 50px;
+          vertical-align: middle;
+          margin-bottom: 0;
+          float: right;
+          li {
+            float: left;
+            padding-left: 58px;
+            a {
+              font-size: 14px;
+              line-height: 24px;
+              color: #ffffff;
+              font-weight: 600;
+              font-family: "Poppins", sans-serif;
+              text-transform: uppercase;
+              &:hover {
+                color: chocolate;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

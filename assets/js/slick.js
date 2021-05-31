@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $(".slider-mttain").slick({
-    dots: false,
+  $(".news-main__contentx").slick({
+    dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     adaptiveHeight: true,
 
   });
@@ -15,7 +15,7 @@ $(document).ready(function () {
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1480,
+        breakpoint: 1180,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -24,7 +24,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 860,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -32,7 +32,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 500,
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

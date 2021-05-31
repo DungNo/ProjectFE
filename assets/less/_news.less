@@ -1,0 +1,91 @@
+.news {
+    max-width: 100%;
+    background-color: #f2f2f2;
+    &-main {
+      max-width: 1170px;
+      // padding: 0 15px;
+      box-sizing: border-box;
+      margin: auto;
+      display: block;
+      &__title {
+        display: block;
+        position: relative;
+        // padding-top: 41px;
+        padding: 41px 15px 0 15px;
+        &__hots {
+          text-align: center;
+          h2 {
+            font-size: 90px;
+            line-height: 182px;
+            color: #ebebeb;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &__last {
+          text-align: center;
+          padding-top: 40px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          word-spacing: 4px;
+          h3 {
+            font-size: 42px;
+            color: #000000;
+            font-weight: 600;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__box {
+          display: inline-block;
+          max-width: 360px;
+          margin-bottom: 87px;
+          padding: 0 15px;
+          width: 33.333%;
+          .content--img {
+            width: 100%;
+            margin-bottom: 22px;
+            a {
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .content--text {
+            a {
+              max-width: 310px;
+              font-size: 16px;
+              line-height: 24px;
+              color: #000000;
+              font-weight: 600;
+              word-spacing: 2px;
+              letter-spacing: 0.1px;
+              font-family: "Poppins", sans-serif;
+            }
+            p {
+              font-size: 12px;
+              line-height: 40px;
+              color: #353333;
+              font-family: "Poppins", sans-serif;
+              word-spacing: 2px;
+              a {
+                font-size: 12px;
+                line-height: 40px;
+                color: #0ca8c9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
