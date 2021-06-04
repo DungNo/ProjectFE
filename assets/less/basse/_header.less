@@ -1,9 +1,10 @@
+
 .header {
     width: 100%;
-    background-color: #222222;
+    background-color: @color-222;
     &-top {
       max-width: 1170px;
-      padding: 17px 15px;
+      padding: 14px 15px;
       box-sizing: border-box;
       margin: auto;
       display: block;
@@ -12,7 +13,7 @@
         width: calc(100% - 120px);
         display: inline-block;
         li {
-          display: inline-flex;
+          .display-inline-flex();
           padding-right: 16px;
           .icon {
             display: inline-block;
@@ -20,17 +21,16 @@
             width: 30px;
             height: 30px;
             background-color: rgba(8, 43, 79, 0);
-            border: 1px solid #0ca8c9;
+            border: 1px solid @color-0ca8c9;
             position: relative;
             margin-right: 9px;
             img {
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%, -50%);
+              .transform(translate(-50%, -50%));
               line-height: 13px;
-              color: #0ca8c9;
-              font-family: "Poppins", sans-serif;
+              color: @color-0ca8c9;
               text-align: center;
             }
           }
@@ -39,10 +39,9 @@
             h4 {
               font-size: 12px;
               letter-spacing: 0.1px;
-              line-height: 18px;
-              color: #bababa;
-              font-family: "Poppins", sans-serif;
-              font-weight: 500;
+              line-height: 23px;
+              color: @color-bababa;
+              font-family: 'Poppins-Medium';
               margin-top: 0;
               margin-bottom: 0;
               word-spacing: 1px;
@@ -51,12 +50,11 @@
               font-size: 12px;
               letter-spacing: 0.1px;
               line-height: 18px;
-              color: #bababa;
-              font-family: "Poppins", sans-serif;
-              font-weight: 500;
+              color: @color-bababa;
+              font-family: 'Poppins-Medium';
               margin-top: 0;
               margin-bottom: 0;
-              color: #fff;
+              color: @color-white;
             }
           }
         }
@@ -65,34 +63,33 @@
       &__right {
         float: right;
         width: 120px;
-        display: flex;
+        .display-flex();
         align-items: flex-start;
         position: absolute;
         top: 50%;
         right: 6px;
-        transform: translateY(-50%);
+        .transform(translate(0, -50%));
         &__icon {
-          display: flex;
+          .display-flex();
           flex: 1;
           align-self: center;
         }
         &__listdropdown {
-          display: flex;
+          .display-flex();
           flex: 1;
           align-self: center;
           width: 95px;        
           form {
-            background-color: #222222;       
+            background-color: @color-222;       
             select {
               max-width: 115px;
               background: url(../images/header/flag.png) no-repeat left center;
               font-size: 12px;
               letter-spacing: 0px;
               line-height: 13px;
-              color: #bababa;
-              font-family: "Poppins", sans-serif;
+              color: @color-bababa;
               border: none;
-              background-color: #222222;
+              background-color: @color-222;
               padding-left: 25px;
             }
           }

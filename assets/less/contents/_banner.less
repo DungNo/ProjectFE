@@ -1,6 +1,7 @@
+
 .banner {
     max-width: 1170px;
-    display: flex;
+    .display-flex();
     margin: auto;
     clear: left;
     &-left {
@@ -11,9 +12,9 @@
         display: block;
       }
       &--img {
-        display: flex;
+        .display-flex();
         width: 100%;
-        background-color: #f0f0f0;
+        background-color: @color-f0f0f0;
         img {
           width: 100%;
           height: auto;
@@ -24,33 +25,31 @@
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        .transform(translate(-50%, 0));
         &__time {
-          display: flex;
+          .display-flex();
           text-align: center;
           justify-content: center;
           box-sizing: border-box;
           .time {
             width: 60px;
             height: 62px;
-            background-color: #fff;
+            background-color: @color-white;
             margin: 0 5px;
             h4 {
               font-size: 21px;
               letter-spacing: -1px;
               line-height: 50px;
-              color: #0ca8c9;
-              font-weight: 600;
-              font-family: "Poppins";
+              color: @color-0ca8c9;
+              font-family: 'Poppins-SemiBold';
               text-align: center;
               margin-bottom: -34px;
             }
             h6 {
               font-size: 12px;
               line-height: 50px;
-              color: #000000;
-              font-weight: 600;
-              font-family: "Poppins";
+              color: @color-black;
+              font-family: 'Poppins-SemiBold';
               text-align: center;
               text-transform: uppercase;
             }
@@ -61,21 +60,19 @@
           h3 {
             font-size: 30px;
             line-height: 30px;
-            color: #000000;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
+            color: @color-black;
+            font-family: 'Poppins-SemiBold';
             text-align: center;
           }
           p {
-            font-family: "Poppins", sans-serif;
             text-align: center;
-            color: #8f8f8f;
+            color: @color-8f8f8f;
             font-size: 18px;
             line-height: 29px;
             padding-bottom: 38px;
             margin-top: 3px;
             span {
-              color: #0ca8c9;
+              color: @color-0ca8c9;
             }
           }
         }
@@ -88,30 +85,28 @@
       h3 {
         font-size: 30px;
         line-height: 30px;
-        color: #000000;
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
+        color: @color-black;
+        font-family: 'Poppins-SemiBold';
         text-transform: uppercase;
       }
       p {
-        font-family: "Poppins", sans-serif;
-        color: #8f8f8f;
+        color: @color-8f8f8f;
         font-size: 19px;
         line-height: 29px;
         margin-top: 2px;
         letter-spacing: -0.7px;
         span {
-          color: #0ca8c9;
+          color: @color-0ca8c9;
         }
       }
       &__up {
         margin-bottom: 30px;
         position: relative;
         &--img {
-          display: flex;
+          .display-flex();
           img {
             width: 100%;
-            background-color: #f0f0f0;
+            background-color: @color-f0f0f0;
           }
         }
         &--text {
@@ -119,15 +114,14 @@
           position: absolute;
           top: 50%;
           left: 31px;
-          transform: translate(0, -50%);
+          .transform(translate(0, -50%));
           margin-top: 5px;
           h2 {
             display: inline-block;
             font-size: 60px;
             line-height: 30px;
-            color: #0ca8c9;
-            font-weight: 600;
-            font-family: "Poppins";
+            color: @color-0ca8c9;
+            font-family: 'Poppins-SemiBold';
           }
           h3 {
             font-size: 24px;
@@ -138,17 +132,17 @@
       &__down {
         position: relative;
         &--img {
-          display: flex;
+          .display-flex();
           img {
             width: 100%;
-            background-color: #f0f0f0;
+            background-color: @color-f0f0f0;
           }
         }
         &--text {
           position: absolute;
           top: 50%;
           left: 31px;
-          transform: translate(0, -60%);
+          .transform(translate(0, -60%));
           margin-top: 3px;
         }
       }

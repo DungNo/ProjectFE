@@ -1,13 +1,4 @@
 $(document).ready(function () {
-  $(".news-main__contentx").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    adaptiveHeight: true,
-
-  });
-
   $('.products-main').slick({
     infinite: true,
     rows: 2,
@@ -41,4 +32,5 @@ $(document).ready(function () {
       }
     ]
   });
+  $('.products-main').slick('refresh');
 });

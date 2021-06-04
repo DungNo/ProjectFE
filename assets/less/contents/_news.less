@@ -1,25 +1,22 @@
 .news {
     max-width: 100%;
-    background-color: #f2f2f2;
+    background-color: @color-f2f2f2;
     &-main {
       max-width: 1170px;
-      // padding: 0 15px;
       box-sizing: border-box;
       margin: auto;
       display: block;
       &__title {
         display: block;
         position: relative;
-        // padding-top: 41px;
         padding: 41px 15px 0 15px;
         &__hots {
           text-align: center;
           h2 {
             font-size: 90px;
             line-height: 182px;
-            color: #ebebeb;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
+            color: @color-ebebeb;
+            font-family: 'Poppins-SemiBold';
             text-align: center;
             text-transform: uppercase;
           }
@@ -30,20 +27,19 @@
           position: absolute;
           left: 50%;
           top: 50%;
-          transform: translate(-50%, -50%);
+          .transform(translate(-50%, -50%));
           word-spacing: 4px;
           h3 {
             font-size: 42px;
-            color: #000000;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
+            color: @color-black;
+            font-family: 'Poppins-SemiBold';
             text-align: center;
             text-transform: uppercase;
           }
         }
       }
       &__content {
-        display: flex;
+        .display-flex();
         flex-wrap: wrap;
         justify-content: space-between;
         &__box {
@@ -54,7 +50,7 @@
           width: 33.333%;
           .content--img {
             width: 100%;
-            margin-bottom: 22px;
+            margin-bottom: 15px;
             a {
               img {
                 width: 100%;
@@ -66,26 +62,34 @@
               max-width: 310px;
               font-size: 16px;
               line-height: 24px;
-              color: #000000;
+              color: @color-black;
               font-weight: 600;
               word-spacing: 2px;
               letter-spacing: 0.1px;
-              font-family: "Poppins", sans-serif;
+              font-family: 'Poppins-SemiBold';
             }
             p {
               font-size: 12px;
               line-height: 40px;
-              color: #353333;
-              font-family: "Poppins", sans-serif;
+              color: @color-353333;
               word-spacing: 2px;
               a {
                 font-size: 12px;
                 line-height: 40px;
-                color: #0ca8c9;
+                color: @color-0ca8c9;
               }
             }
           }
         }
       }
     }
-  }
+}
+.slick-dots {
+  bottom: 30px;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+.slick-next, .slick-prev {
+  display: none;
+}

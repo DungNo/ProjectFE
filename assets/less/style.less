@@ -1,24 +1,69 @@
 @import '_reset';
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../font/Poppins/Poppins-SemiBold.ttf);
+}
 
 @color-0ca8c9: #0ca8c9;
 @color-8f8f8f: #8f8f8f;
 @color-white: #fff;
 @color-black: #000;
+@color-ddd: #ddd;
+@color-f5f5f5: #f5f5f5;
+@color-696969: #696969;
+@color-ebebeb: #ebebeb;
+@color-f2f2f2: #f2f2f2;
+@color-20acca: #20acca;
+@color-222: #222;
+@color-bababa: #bababa;
+@color-f0f0f0: #f0f0f0;
+@color-e0e0e0: #e0e0e0;
+@color-353333: #353333;
 
-@import '_header';
-@import '_logo-search';
-@import '_navbar-menu';
-@import '_slideshow';
-@import '_fact';
-@import '_banner';
-@import '_products';
-@import '_news';
-@import '_signin';
-@import '_supplier';
-@import '_footer';
-@import '_license';
+.transform(@translate) {
+    transform: @translate;
+    -webkit-transform: @translate;
+    -moz-transform: @translate;
+    -o-transform: @translate;
+    -ms-transform: @translate;
+}
+
+.display-flex(){
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+.display-inline-flex() {
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+@import './basse/_header.less';
+@import './basse/_logo-search.less';
+@import './basse/_navbar-menu.less';
+@import './contents/_slideshow';
+@import './contents/_fact';
+@import './contents/_banner';
+@import './contents/_products';
+@import './contents/_news';
+@import './contents/_signin';
+@import './contents/_supplier';
+@import './basse/_footer.less';
+@import './basse/_license.less';
 @import '_responsive';

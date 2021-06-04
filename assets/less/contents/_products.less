@@ -1,3 +1,4 @@
+
 .products {
     max-width: 1170px;
     box-sizing: border-box;
@@ -13,9 +14,8 @@
         display: inline-block;
         h2 {
           font-size: 90px;
-          color: #f5f5f5;
-          font-weight: 600;
-          font-family: "Poppins", sans-serif;
+          color: @color-f5f5f5;
+          font-family: 'Poppins-SemiBold';
           text-align: left;
           text-transform: uppercase;
           line-height: 183px;
@@ -25,12 +25,11 @@
         position: absolute;
         top: 50%;
         left: 15px;
-        transform: translateY(-50%);
+        .transform(translate(0, -50%));
         h3 {
           font-size: 42px;
-          color: #000000;
-          font-weight: 600;
-          font-family: "Poppins", sans-serif;
+          color: @color-black;
+          font-family: 'Poppins-SemiBold';
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
@@ -38,20 +37,17 @@
     }
     &-main {
       width: 100%;
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-between;
       li {
         width: 100%;
         padding: 0 15px;
-        margin-bottom: 50px;
+        margin-bottom: 51px;
         list-style: none;
         a {
           display: block;
           .products-item {
             margin-bottom: 13px;
             img {
-              background-color: #f5f5f5;
+              background-color: @color-f5f5f5;
             }
           }
           .items-title {
@@ -61,24 +57,22 @@
             h6 {
               font-size: 14px;
               line-height: 22px;
-              color: #000000;
-              font-weight: 600;
-              font-family: "Poppins";
+              color: @color-black;
+              font-family: 'Poppins-SemiBold';
               text-align: center;
               word-spacing: 2px;
             }
             p {
               font-size: 13px;
               line-height: 33px;
-              font-weight: 600;
-              font-family: "Poppins";
+              font-family: 'Poppins-SemiBold';
               text-align: center;
-              color: #0ca8c9;
+              color: @color-0ca8c9;
               letter-spacing: -0.2px;
               word-spacing: 8px;
               span {
                 text-decoration: line-through;
-                color: #696969;
+                color: @color-696969;
               }
             }
           }

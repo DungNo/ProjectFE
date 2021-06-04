@@ -78,7 +78,7 @@
       a {
         width: unset;
         display: inline-block;
-        border-bottom: 2px solid #0ca8c9;
+        border-bottom: 2px solid @color-0ca8c9;
       }
     }
     .fact {
@@ -117,6 +117,7 @@
     }
     .footer-main {
       display: inline-block;
+      width: 100%;
       & > li {
         width: 50%;
         padding: 0 15px;
@@ -151,8 +152,8 @@
       display: block;
     }
     .dropdown-content a:hover {
-      color: #000;
-      background-color: #fff;
+      color: @color-black;
+      background-color: @color-white;
     }
     .menu-main__menu__nav {
       display: none;
@@ -184,13 +185,15 @@
       max-width: 260px;
       .content_1 h1 {
         line-height: 30px;
+        font-size: 5.63vw;
       }
       .content_2 h4 {
-        font-size: 11px;
+        font-size: 13px;
         line-height: 22px;
+        letter-spacing: unset;
       }
       .content__link a {
-        font-size: 11px;
+        font-size: 13px;
         line-height: 19px;
       }
     }
@@ -214,7 +217,7 @@
       }
       &-right {
         float: unset;
-        display: flex;
+        .display-flex();
         padding: unset;
         &__up {
           padding: 0 15px;
@@ -280,7 +283,7 @@
           font-size: 10px;
           line-height: 30px;
           a {
-            font-size: 11px;
+            font-size: 13px;
           }
         }
       }
@@ -290,12 +293,12 @@
       &__title {
         margin-top: 30px;
         h3 {
-          font-size: 19px;
+          font-size: 20px;
           line-height: 26px;
           margin-bottom: 10px;
         }
         p {
-          font-size: 11px;
+          font-size: 13px;
           line-height: 30px;
           margin-bottom: 30px;
         }
@@ -311,7 +314,7 @@
         }
         button {
           max-width: 100px;
-          font-size: 12px;
+          font-size: 13px;
           line-height: 40px;
           border-radius: 25px;
           right: 3px;
@@ -355,7 +358,7 @@
       line-height: 30px;
       &__category {
         select {
-          font-size: 11px;
+          font-size: 13px;
           line-height: 30px;
           padding-left: 0px;
           padding-right: 5px;
@@ -363,7 +366,7 @@
       }
       input {
         padding-left: 15px;
-        font-size: 11px;
+        font-size: 13px;
         line-height: 30px;
         margin-left: unset;
       }
@@ -371,6 +374,9 @@
         width: 40px;
         height: 31px;
       }
+    }
+    .logo-main__logo1 {
+      .display-flex();
     }
     .banner-right {
       display: inline-block;
@@ -380,18 +386,6 @@
         ul {
           font-size: 11px;
         }
-      }
-      &__menu {
-        // .dropdown-content {
-        //   min-width: unset;
-        //   width: 60px;
-        //   right: 15px;
-        //   a {
-        //     font-size: 11px;
-        //     line-height: 15px;
-        //     padding: unset;
-        //   }
-        // }
       }
     }
     .slider--title {
@@ -452,7 +446,8 @@
             line-height: 15px;
           }
           p {
-            font-size: 12px;
+            font-size: 13px;
+            padding-bottom: 10px;
           }
         }
       }
@@ -502,10 +497,12 @@
       top: 35px;
     }
     .news-main {
+      padding: 0 15px;
       &__title {
         h2 {
           font-size: 40px;
           line-height: 60px;
+          padding: unset;
         }
         h3 {
           font-size: 20px;
@@ -517,6 +514,8 @@
         &__box {
           width: 100%;
           margin-bottom: 10px;
+          max-width: unset;
+          padding: unset;
           .content--img {
             margin-bottom: 10px;
           }
@@ -541,7 +540,7 @@
       max-width: 250px
     }
     .footer {
-      padding-top: 10px;
+      padding-top: 40px;
       padding-bottom: 0;
       &-main > li {
         width: 100%;

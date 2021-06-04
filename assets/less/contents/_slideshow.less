@@ -5,7 +5,6 @@
     &-main {
       width: 100%;
       .mySlides {
-        // display: none;
         width: 100%;
         min-height: 250px;      
       }
@@ -21,32 +20,29 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      .transform(translate(-50%, -50%));
       &__content {
         max-width: 752px;
         position: absolute;
         top: 50%;
         left: 15px;
-        transform: translateY(-50%);
+        .transform(translate(0, -50%));
         margin-top: -9px;
         h1 {
           font-size: 3.63vw;
           line-height: 90px;
-          color: #000000;
-          font-weight: 500;
-          font-family: "Poppins", sans-serif;
+          color: @color-black;
+          font-family: 'Poppins-Medium';
           letter-spacing: 0.8px;
           span {
-            color: #0ca8c9;
+            color: @color-0ca8c9;
           }
         }
         h4 {
           font-size: 17px;
           line-height: 30px;
-          color: #8f8f8f;
-          font-weight: 400;
+          color: @color-8f8f8f;
           letter-spacing: 0.7px;
-          font-family: "Poppins", sans-serif;
         }
         .content_1 {
           margin-bottom: 15px;
@@ -57,13 +53,12 @@
         .content__link {
           display: block;
           width: 82px;
-          border-bottom: 2px solid #0ca8c9;
+          border-bottom: 2px solid @color-0ca8c9;
           a {
             font-size: 16px;
             line-height: 33px;
-            color: #000000;
-            font-weight: 600;
-            font-family: "Poppins";
+            color: @color-black;
+            font-family: 'Poppins-SemiBold';
             display: block;
             width: 100%;
             text-transform: capitalize;
@@ -78,9 +73,9 @@
       right: 15px;
       height: 60px;
       width: 60px;
-      transform: translate(-10%, -50%);
+      .transform(translate(-10%, -50%));
       background: url(../images/slider/next.png) no-repeat center;
-      color: #fff;
+      color: @color-white;
       padding-left: 10px;
       cursor: pointer;
     }
@@ -92,7 +87,7 @@
       height: 60px;
       width: 60px;
       padding-right: 5px;
-      transform: translate(-10%, -50%);
+      .transform(translate(-10%, -50%));
       background: url(../images/slider/prev.png) no-repeat center;
       cursor: pointer;
     }

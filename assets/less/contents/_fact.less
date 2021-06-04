@@ -1,18 +1,19 @@
+
 .fact {
     max-width: 1170px;
-    padding: 59px 0 61px;
+    padding: 60px 0 60px;
     box-sizing: border-box;
     margin: auto;
-    display: flex;
+    .display-flex();
     justify-content: space-between;
     li {
       width: 25%;
       padding: 0 15px;
-      display: flex;
+      .display-flex();
       position: relative;
       a {
         &:hover {
-          background-color: #ebebeb;
+          background-color: @color-ebebeb;
         }
       }
       .fact__logo {
@@ -22,7 +23,7 @@
           position: absolute;
           top: 50%;
           left: 15px;
-          transform: translateY(-50%);
+          .transform(translate(0, -50%));
         }
       }
       .fact__content {
@@ -31,16 +32,13 @@
           font-size: 16px;
           line-height: 20px;
           letter-spacing: 0.2px;
-          color: #000000;
-          font-weight: 500;
-          font-family: "Poppins", sans-serif;
+          color: @color-black;
+          font-family: 'Poppins-Medium';
         }
         P {
           font-size: 14px;
           line-height: 24px;
-          color: #8f8f8f;
-          font-weight: 400;
-          font-family: "Poppins", sans-serif;
+          color: @color-8f8f8f;
         }
       }
       &:last-child {

@@ -1,6 +1,6 @@
 .menu {
     width: 100%;
-    background-color: #0ca8c9;
+    background-color: @color-0ca8c9;
     height: 50px;
     z-index: 10;
     &-main {
@@ -19,9 +19,8 @@
           line-height: 50px;
           padding-left: 45px;
           font-size: 14px;
-          color: #ffffff;
-          font-weight: 600;
-          font-family: "Poppins", sans-serif;
+          color: @color-white;
+          font-family: 'Poppins-SemiBold';
           text-transform: uppercase;
           margin-bottom: 0;
           letter-spacing: 0.2px;
@@ -33,18 +32,18 @@
       }
       &__menu {
         display: inline-block;
-        background-color: #0ca8c9;
+        background-color: @color-0ca8c9;
         float: right;
         z-index: 100;
         .dropbtn {
-          background: url("../images/header/Overflow.png") no-repeat center left;
+          background: url('../images/header/Overflow.png') no-repeat center left;
           line-height: 50px;
-          color: #ffffff;
+          color: @color-white;
           width: 50px;
           height: 50px;
           display: none;
           transform: rotate(180deg);
-          background-color: #0ca8c9;
+          background-color: @color-0ca8c9;
           border: none;
           cursor: pointer;
           &:hover {
@@ -54,13 +53,13 @@
         #category {
           a {
             &:hover {
-              color: #0ca8c9;
+              color: @color-0ca8c9;
             }
           }
         }
         &__nav {
           display: inline-block;
-          line-height: 50px;
+          line-height: 48px;
           vertical-align: middle;
           margin-bottom: 0;
           float: right;
@@ -70,9 +69,8 @@
             a {
               font-size: 14px;
               line-height: 24px;
-              color: #ffffff;
-              font-weight: 600;
-              font-family: "Poppins", sans-serif;
+              color: @color-white;
+              font-family: 'Poppins-SemiBold';
               text-transform: uppercase;
               &:hover {
                 color: chocolate;
