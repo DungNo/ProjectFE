@@ -4,11 +4,10 @@
     background-color: @color-white;
     margin: 23px 0;
     &-main {
-      max-width: 1170px;
+      .container;
       padding: 0 15px;
       margin-top: 25px;
       margin-bottom: 25px;
-      box-sizing: border-box;
       margin: auto;
       display: block;
       &__left {
@@ -89,6 +88,8 @@
             position: absolute;
             top: 50%;
             right: -2px;
+            outline: none;
+            cursor: pointer;
             .transform(translate(0, -50%));
             img {
               line-height: 40px;

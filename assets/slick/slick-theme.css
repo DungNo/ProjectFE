@@ -89,6 +89,7 @@
 .slick-prev:before
 {
     content: '←';
+    
 }
 [dir='rtl'] .slick-prev:before
 {

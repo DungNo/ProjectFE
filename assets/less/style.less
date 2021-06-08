@@ -32,12 +32,12 @@
 @color-e0e0e0: #e0e0e0;
 @color-353333: #353333;
 
-.transform(@translate) {
-    transform: @translate;
-    -webkit-transform: @translate;
-    -moz-transform: @translate;
-    -o-transform: @translate;
-    -ms-transform: @translate;
+.transform(@_translate) {
+    transform: @_translate;
+    -webkit-transform: @_translate;
+    -moz-transform: @_translate;
+    -o-transform: @_translate;
+    -ms-transform: @_translate;
 }
 
 .display-flex(){
@@ -52,6 +52,10 @@
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex;
+}
+.container {
+    max-width: 1170px;
+    box-sizing: border-box;
 }
 
 @import './basse/_header.less';
