@@ -8,5 +8,5 @@ $(document).ready(function () {
     prevArrow: $('.prev1'),
     nextArrow: $('.next1')
   });
-  // $('.slider-main').slick('refresh');
+  $('.slider-main').slick('refresh');
 });
