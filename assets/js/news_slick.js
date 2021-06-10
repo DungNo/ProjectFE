@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.news-main__content').slick({
-      dots: true,
+      dots: false,
       prevArrow: false,
       nextArrow: false,
       infinite: false,
@@ -13,7 +13,7 @@ $(document).ready(function () {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            dots: true
+            dots: false
           }
         },
         {
