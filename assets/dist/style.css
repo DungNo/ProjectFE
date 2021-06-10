@@ -833,6 +833,7 @@ li {
   font-size: 37px;
   color: #8f8f8f;
   margin-right: 10px;
+  cursor: pointer;
 }
 .products-title__button .prev:hover {
   color: #0ca8c9;
@@ -841,6 +842,7 @@ li {
   margin-right: -10px;
   font-size: 37px;
   color: #8f8f8f;
+  cursor: pointer;
 }
 .products-title__button .next:hover {
   color: #0ca8c9;
@@ -942,6 +944,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
 }
 .news-main__content__box {
   display: inline-block;
@@ -1543,6 +1546,9 @@ footer .main__payments img {
   .products-main li a .items-title {
     padding: 0 60px;
   }
+  .news {
+    padding-bottom: 30px;
+  }
   .news-main__title {
     padding-top: 0;
   }
@@ -1576,6 +1582,9 @@ footer .main__payments img {
   }
   .news-main__content__box .content--text p a {
     font-size: 13px;
+  }
+  .news-main__content .slick-dots {
+    bottom: -15px;
   }
   .signup-main {
     padding-bottom: 30px;
@@ -1795,6 +1804,9 @@ footer .main__payments img {
   .products .slick-prev {
     top: 35px;
   }
+  .news {
+    padding-bottom: 45px;
+  }
   .news-main {
     padding: 0 15px;
   }
@@ -1830,6 +1842,9 @@ footer .main__payments img {
   }
   .news-main__content__box .content--text p a {
     font-size: 13px;
+  }
+  .news-main__content .slick-dots {
+    bottom: -15px;
   }
   .signup-main__form input {
     max-width: 250px;

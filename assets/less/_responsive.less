@@ -328,42 +328,53 @@
         padding: 0 60px;
       }   
     }
-    .news-main__title {
-      padding-top: 0;
-      &__hots h2 {
-        font-size: 60px;
-        line-height: 100px;
-      }
-      &__last {
-        padding-top: 0;
-        h3 {
-          font-size: 25px;
+    .news {
+      padding-bottom: 30px;
+      &-main {
+        &__title {
+          padding-top: 0;
+          &__hots h2 {
+            font-size: 60px;
+            line-height: 100px;
+          }
+          &__last {
+            padding-top: 0;
+            h3 {
+              font-size: 25px;
+            }
+          }
         }
-      }
-    }
-    .news-main__content__box {
-      margin-bottom: 30px;
-      .content--text {
-        > a {
-          display: inline-block;
-          font-size: 13px;
-          line-height: 15px;
-          height: 30px;
-          margin: 0 auto;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        p {
-          font-size: 10px;
-          line-height: 30px;
-          a {
-            font-size: 13px;
+        &__content {
+          &__box {
+            margin-bottom: 30px;
+            .content--text {
+              > a {
+                display: inline-block;
+                font-size: 13px;
+                line-height: 15px;
+                height: 30px;
+                margin: 0 auto;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              p {
+                font-size: 10px;
+                line-height: 30px;
+                a {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .slick-dots {
+            bottom: -15px;
           }
         }
       }
     }
+    
     .signup-main {
       padding-bottom: 30px;
       &__title {
@@ -608,42 +619,48 @@
     .products .slick-prev {
       top: 35px;
     }
-    .news-main {
-      padding: 0 15px;
-      &__title {
-        h2 {
-          font-size: 40px;
-          line-height: 60px;
-          padding: unset;
-        }
-        h3 {
-          font-size: 20px;
-        }
-      }
-      &__content {
-        display: block;
-        text-align: center;
-        &__box {
-          width: 100%;
-          margin-bottom: 10px;
-          max-width: unset;
-          padding: unset;
-          .content--img {
-            margin-bottom: 10px;
+    .news {
+      padding-bottom: 45px;
+      &-main {
+        padding: 0 15px;
+        &__title {
+          h2 {
+            font-size: 40px;
+            line-height: 60px;
+            padding: unset;
           }
-          .content--text {
-            > a {
-              font-size: 15px;
-              line-height: 20px;
-              overflow: unset;
+          h3 {
+            font-size: 20px;
+          }
+        }
+        &__content {
+          display: block;
+          text-align: center;
+          &__box {
+            width: 100%;
+            margin-bottom: 10px;
+            max-width: unset;
+            padding: unset;
+            .content--img {
+              margin-bottom: 10px;
             }
-            p {
-              font-size: 14px;
-              line-height: 10px;
-              a {
-                font-size: 13px;
+            .content--text {
+              > a {
+                font-size: 15px;
+                line-height: 20px;
+                overflow: unset;
+              }
+              p {
+                font-size: 14px;
+                line-height: 10px;
+                a {
+                  font-size: 13px;
+                }
               }
             }
+          }
+          .slick-dots {
+            bottom: -15px;
           }
         }
       }

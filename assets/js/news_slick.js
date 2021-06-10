@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $('.news-main__content').slick({
-      dots: false,
+      dots: true,
+      prevArrow: false,
+      nextArrow: false,
       infinite: false,
       speed: 300,
       slidesToShow: 3,
@@ -9,9 +11,9 @@ $(document).ready(function () {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
-            dots: false
+            dots: true
           }
         },
         {
