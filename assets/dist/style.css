@@ -535,6 +535,7 @@ li {
   background: url(../images/slider/prev.png) no-repeat center;
   cursor: pointer;
   outline: none;
+  color: #000;
 }
 .slider .prev1:hover {
   background: url(../images/slider/prevhover.png) no-repeat left;
