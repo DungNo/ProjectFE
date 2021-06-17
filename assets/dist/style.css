@@ -1405,6 +1405,7 @@ footer .main__payments img {
     width: 33.333%;
     box-sizing: border-box;
     padding: 0 15px;
+    max-width: 510px;
   }
   .footer-main {
     display: inline-block;
