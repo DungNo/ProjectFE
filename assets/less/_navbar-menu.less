@@ -66,16 +66,22 @@
           float: right;
           li {
             float: left;
-            padding-left: 58px;
             a {
+              display: block;
               font-size: 14px;
               line-height: 24px;
               color: @color-white;
               font-family: 'Poppins-SemiBold';
               text-transform: uppercase;
+              padding: 13px 29px;              
               &:hover {
                 color: chocolate;
               }
+            }
+            &:last-child {
+              a {
+                padding-right: 0;
+              }              
             }
           }
         }
